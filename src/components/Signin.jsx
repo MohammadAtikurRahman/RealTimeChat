@@ -22,7 +22,7 @@ function Signin() {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" style={{fontSize: '16px'}} label="Remember me" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="danger" type="submit">
                     Sign In 
                 </Button>
                 </Form>
