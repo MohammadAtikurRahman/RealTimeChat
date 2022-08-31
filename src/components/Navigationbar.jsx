@@ -1,7 +1,7 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navigationbar() {
   return (
@@ -15,22 +15,12 @@ function Navigationbar() {
             <Nav.Link href="#pricing">Features</Nav.Link>
             <NavDropdown title="Services" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Services</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Chat app
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Chat app</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-               Social 
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Social</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          {/* <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
