@@ -8,14 +8,39 @@ import Button from 'react-bootstrap/Button';
 import img from '../images/human.png';
 import img1 from '../images/female.jpg';
 import InputGroup from 'react-bootstrap/InputGroup';
+
 import '../App.css';
+import { FaDotCircle } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 function Profile() {
   return (
     <Container>
    
 
-      <Card>
+      <Card >
+      <Card.Header  >      
+        
+                    <IconContext.Provider
+                    value={{ color: '#00FF00', size: '30px' }}
+                    >
+                    <div>
+                        <FaDotCircle /> Md. Atikur Rahman
+                         <Button variant="danger" type="submit" className='float-end'>
+                            Log Out
+                        </Button>
+                    </div>
+                  </IconContext.Provider>
+        
+        
+        
+        
+       
+         
+       
+      
+      </Card.Header>
+       
       <Card.Header className="customCard ">Dotnet Chat</Card.Header>
       <Card.Body>
             <Row>
