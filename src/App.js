@@ -4,9 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
+import Navigationbar from "./components/Navigationbar";
 function App() {
   return (
     <div className="App">
+      <Navigationbar/>
       <header className="App-header">
         <BrowserRouter>
           <Routes>
