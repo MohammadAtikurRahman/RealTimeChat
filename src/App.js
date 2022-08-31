@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
 
-        <Navigationbar /> 
+       
       
       <header className="App-header">
           <BrowserRouter>
@@ -21,6 +21,7 @@ function App() {
                    <Route path="signup" element={<Signup />} />
                      <Route path="profile" element={<Profile />} />
                    <Route path="/" element={<Home />} />
+                  
               </Routes>
             </BrowserRouter>
 

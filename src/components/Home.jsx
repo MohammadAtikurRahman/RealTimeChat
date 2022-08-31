@@ -6,13 +6,13 @@ import React from "react";
 
 
 
-
-
+  
 
  function Home() {
   return (
+   
     <div>
-        
+    
         <div className="App">
             
                     <h2>Welcome dotNetChat</h2>
