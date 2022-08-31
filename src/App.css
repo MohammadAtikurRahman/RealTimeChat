@@ -14,4 +14,8 @@
   color: rgb(3, 3, 3);
 }
 
-
+.customCard  {
+  background: rgb(0, 153, 255) !important;
+  color: azure;
+  text-align: center;
+}

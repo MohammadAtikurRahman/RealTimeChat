@@ -7,6 +7,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import img from '../images/human.png';
 import img1 from '../images/female.jpg';
+import InputGroup from 'react-bootstrap/InputGroup';
+import '../App.css';
 
 function Profile() {
   return (
@@ -14,7 +16,7 @@ function Profile() {
    
 
       <Card>
-      <Card.Header>dotnet chat</Card.Header>
+      <Card.Header className="customCard ">Dotnet Chat</Card.Header>
       <Card.Body>
             <Row>
         
@@ -32,7 +34,7 @@ function Profile() {
                 </Form>
           <Card className=" mt-3">
    
-            <Card.Title className=" p-4 m-1"  >
+            <Card.Title className=" p-1 m-1"  >
                
                 
                  <img src={img} alt="logo" style={{ width: 50, height: 50 }}  />
@@ -46,40 +48,62 @@ function Profile() {
 
               
           
-            <Card.Title className=" p-4 m-1 " >
+            <Card.Title className=" p-1 m-1 " >
                 
                  <img src={img1} alt="logo" style={{ width: 50, height: 50 }}  />
                 
                 Simi Tasneem Alam</Card.Title>
 
           </Card>
-                <Card className=" mt-3">
-
-              
-          
-            <Card.Title className=" p-4 m-1 " >
-                
-                 <img src={img1} alt="logo" style={{ width: 50, height: 50 }}  />
-                
-                Simi Tasneem Alam</Card.Title>
-
-          </Card>
-             <Card className=" mt-3">
-
-              
-          
-            <Card.Title className=" p-4 m-1 " >
-                
-                 <img src={img1} alt="logo" style={{ width: 50, height: 50 }}  />
-                
-                Simi Tasneem Alam</Card.Title>
-
-          </Card>
+           
 
         </Col>
         
         <Col xs={12} md={8}>
-         <Card>
+
+           <p> Md. Atikur Rahman </p>
+
+
+         <Card style={{ width: '44rem', height: '27rem' }}>
+          <div >
+          <img src={img1} alt="logo" style={{ width: 30, height: 30 }}></img> 
+          <a  style={{fontSize: '18px' , backgroundColor: '#E2DFD2' }} className='float-left'  > Md. Atikur Rahman</a>
+          <p className='ms-3'>Hello</p>
+
+
+          </div>
+         <div >
+          <img src={img1} alt="logo" style={{ width: 30, height: 30 }} className='float-end'   ></img> 
+          <a  style={{fontSize: '18px' , backgroundColor: '#E2DFD2' }}   className='float-end' > Md. Atikur Rahman</a>
+           <br/>
+          <p className=' ms-3  float-end me-3 ' >Hello</p>
+
+
+          </div>
+        
+
+          </Card>
+           <Card style={{ width: '44rem', height: '5rem' }} className='mt-3'>
+            
+           
+            
+
+
+
+
+
+
+
+
+                    
+                    <InputGroup style={{ width: '44rem', height: '5rem' }}>
+                                <Form.Control
+                                placeholder="Your Massage"
+                                />
+                                
+                                <Button variant="outline-primary">Send</Button>
+                    </InputGroup>
+        
 
 
           </Card>
